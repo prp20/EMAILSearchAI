@@ -38,7 +38,7 @@ The design of this application is in 4 stages: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Using the data generated above, create embeddings that are suitable to be stored in a vector database. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Create a persistent database in which the generated embeddings can be stored in the form of a collection. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Create two collections where one is a cache collection and another is a main collection. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- In the cache collection store only those data that has been used before, while in the main collection store all the embeddings that have &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;been generated from the OpenAI embeddings. <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- In the cache collection store only those data that has been used before, while in the main collection store <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all the embeddings that have been generated from the OpenAI embeddings. <br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;3) **Populating Cache Layer, Re-Rank the results**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Based on the query received, search the cache layer for the suitable result. If not found, search the main collection for the same.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Store the top 10 results obtained into the cache Layer by sorting the results based on their semantic score.<br>

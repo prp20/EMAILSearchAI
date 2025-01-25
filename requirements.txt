@@ -1,0 +1,8 @@
+pdfplumber
+tiktoken 
+openai 
+chromaDB 
+sentence-transformers
+torch
+torchvision
+torchaudio
